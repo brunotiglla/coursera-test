@@ -1,9 +1,167 @@
-cd<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Hello Coursera!</title>
+<meta charset="utf-8">
+<meta name="viewpor" content="width=device-width, initial-scale=1">
+<title> Responsive Layout</title>
+<style >
+	
+* {
+	box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+}
+p {
+
+	border: 4px solid black;
+	background-color: #9D9C9C;
+	width: 90%;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Helvetica;
+	color: white;
+	
+}
+
+
+
+@media {
+	.span1, .span2, .span3, .span4{	
+	}
+	.span1{
+		border: 3px solid black;
+		background-color: #FCDADA;
+		color: black;
+		width: 40%;
+		height: 26px;
+		text-align: center;
+		float: right;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.span2{
+		border: 3px solid black;
+		background-color: #FF0000;
+		color: white;
+		width: 40%;
+		height: 26px;
+		text-align: center;
+		float: right;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+	.span3{
+		border: 3px solid black;
+		background-color: #C2A54D;
+		color: white;
+		width: 40%;
+		height: 26px;
+		text-align: center;
+		float: right;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+	.span4{
+		color: black;
+		margin-left: 2%;
+		margin-top: 3%;
+		text-align: center;
+		float: left;
+	}
+}
+
+
+.row{
+	width: 100%;
+}
+
+/**************** PAGINAS PC ****************/
+@media (min-width: 992px){
+	.col-pc-1, .col-pc-2, .col-pc-3{
+		float: left;
+	}
+	.col-pc-1{
+		width: 33.33%;
+	}
+	.col-pc-2{
+		width: 66.66%;
+	}
+	.col-pc-3{
+		width: 100%;
+	}
+
+}
+
+/**************** PAGINAS Tableta ****************/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-tb-1, .col-tb-2, .col-tb-3{
+		float: left;
+	}
+	.col-tb-1{
+		width: 49%;
+	}
+	.col-tb-2{
+		width: 49%;
+	}
+	.col-tb-3{
+		width: 100%;
+}
+
+/**************** PAGINAS Celular ****************/
+@media (max-width: 767px){
+	.col-ce-1, .col-ce-2, .col-ce-3{
+		float: left;
+	}
+	.col-ce-1{
+		width: 33%;
+	}
+	.col-ce-2{
+		width: 33%;
+	}
+	.col-ce-3{
+		width: 33%;
+	}
+}
+
+
+
+</style>
 </head>
 <body>
-	<div>I love <span>gardeing</span></div>
+<h1 > Responsive Layout</h1>
+
+
+<div class="row">
+	
+
+	<div class= "col-pc-1 col-tb-1 col-ce-1">
+		<p> 
+			<span class="span1"> Chicken</span>
+			<span class="span4">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum </span>
+		</p>
+	</div>
+	<div class= "col-pc-1 col-tb-1 col-ce-1">
+		<p> 
+			<span class="span2"> Chicken</span>
+			<span class="span4">lorem ipsumlorem ipsumlorem ipsumlorem ipsum asdasdas vlorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum </span>
+		</p>
+	</div>
+	<div class= "col-pc-1 col-tb-3 col-ce-1">
+		<p> 
+			<span class="span3"> Chicken</span>
+			<span class="span4">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum sdsds lorem ipsumlorem ipsum dsds lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum </span>
+		</p>
+	</div>
+
+
+	
+</div>
+
+
+
 </body>
 </html>
