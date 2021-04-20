@@ -1,0 +1,17 @@
+*{
+	box-sizing: border-box;
+}
+
+.row{
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+
+
+h1 {
+	text-align: center;
+	margin-top:  15px;
+	font-size: 50px;
+}
+
